@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Database Connection Status</title>
+</head>
+<body>
+    <h1>Database Connection Status</h1>
+    <ul>
+        {% for alias, status in connection_status.items %}
+            <li>{{ alias }}: {{ status }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
